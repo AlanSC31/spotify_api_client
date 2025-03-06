@@ -4,59 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Artist Top 10</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Se referencia archivo de estilos que le da la apariencia a la pagina -->
 </head>
-<body>
-    <table>
-        <caption>Top 10 Canciones del Artista</caption>
-        <thead>
-            <tr>
-                <th>Posición</th>
-                <th>Canción</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Canción 1</td>
-            </tr>
-            <tr>
-                <td>Canción 2</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Canción 3</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Canción 4</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Canción 5</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Canción 6</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Canción 7</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>Canción 8</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Canción 9</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>Canción 10</td>
-                <td>10</td>
-            </tr>
-        </tbody>
-    </table>
+<div>
+
+    <!-- Contenedor del título y formulario de búsqueda -->
+    <div class="formContainer">
+        <h1 id="headerCaption">Buscar Top 10 Canciones de...</h1>
+        <!-- Formulario para ingresar el artista que deseas buscar -->
+        <form id="searchForm">
+            <label for="artist">Artista: </label>
+            <input type="text" id="artist" name="artist" placeholder="Ingresa el nombre del artista">
+            <button id="search" type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="tableContainer">
+        <table id="tablaDeTop10">
+            <caption id="tableCaption">Top 10 Canciones</caption>
+            <thead>
+                <tr>
+                    <th>Ranking</th>
+                    <th>Canción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tabla vacía para entrada dinámica de datos a traves de JS -->
+            </tbody>
+        </table>
+    </div>
+<script src="js.js"></script>
 </body>
 </html>

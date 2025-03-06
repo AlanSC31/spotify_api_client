@@ -1,14 +1,33 @@
+/*****
+
+Cambios de estilos a los elementos
+del HTML
+
+*****/
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: #8400ff;
+}
+input {
+    padding: 8px;
+    width: 200px;
+    margin-top: 10px;
+}
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 table {
     width: 60%;
     margin: auto;
     border-collapse: collapse;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background-color: #fff;
+    background-color: #949494;
 }
 caption {
     font-size: 1.5em;
@@ -22,4 +41,17 @@ th, td {
 }
 th {
     background-color: #e2e2e2;
+}
+
+/*****
+
+Cambios de estilo a las clases de
+ciertos elementos.
+
+*****/
+.formContainer {
+    padding: 20px;
+}
+.tableContainer {
+    margin: 20px;
 }
