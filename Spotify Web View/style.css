@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+caption {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+}
+th {
+    background-color: #e2e2e2;
+}
