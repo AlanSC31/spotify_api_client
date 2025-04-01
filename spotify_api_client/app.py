@@ -9,8 +9,8 @@ secret_id = 'a8c395d102c74bf9b7915f18ed2dfc8d'
 auth_manager = SpotifyClientCredentials(client_id=app_id, client_secret=secret_id)
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
-# retorna las 10 canciones mas populares del artista
 def get_top_tracks(artist_name):
+    """Obtiene las 10 canciones más populares de un artista en Spotify."""
     if not artist_name:
         return None, "Ingresa el nombre de un artista"
 
